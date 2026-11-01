@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — LyricProto</title>
+<meta name="robots" content="index, follow">
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<style>
+  :root{--bg:#09090f;--card:#15131f;--line:#241f33;--ink:#f3f1f8;--dim:#a39fb5;--faint:#6f6a83;--violet:#8b5cf6}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);line-height:1.7;
+    font-family:"Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif}
+  body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+    background:radial-gradient(800px 500px at 15% 0%,rgba(139,92,246,.18),transparent 60%),
+      radial-gradient(700px 500px at 90% 10%,rgba(236,72,153,.12),transparent 60%)}
+  .wrap{max-width:780px;margin:0 auto;padding:48px 24px 80px}
+  a{color:var(--violet)}
+  .top{display:flex;align-items:center;gap:12px;margin-bottom:8px}
+  .top img{width:34px;height:34px;border-radius:9px}
+  .top b{font-size:17px}
+  h1{font-size:34px;margin:24px 0 4px;letter-spacing:-.3px}
+  .eff{color:var(--faint);font-size:14px;margin-bottom:28px}
+  h2{font-size:21px;margin:34px 0 10px}
+  p,li{color:#d8d5e4}
+  .dim{color:var(--dim)}
+  ul{padding-left:22px}
+  li{margin:6px 0}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 22px;margin:18px 0}
+  hr{border:none;border-top:1px solid var(--line);margin:40px 0}
+  .lang{color:var(--faint);font-size:13px;text-transform:uppercase;letter-spacing:2px;margin:46px 0 0}
+  footer{margin-top:40px;color:var(--faint);font-size:14px}
+  footer a{color:var(--dim)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><img src="assets/icon.png" alt=""><b>LyricProto</b></div>
+
+  <h1>Privacy Policy</h1>
+  <div class="eff">Effective date: November 1, 2026</div>
+
+  <p>LyricProto ("the app") is a desktop application for Windows that shows karaoke lyrics on
+  screen, synced to the music you are playing. This policy explains what the app accesses and
+  what happens to that data. In short: <b>the app runs on your own PC, the developer operates no
+  server, and no personal data is collected, stored, or shared by the developer.</b></p>
+
+  <h2>What the app accesses on your device</h2>
+  <ul>
+    <li><b>Now-playing information</b> (song title and artist) is read from Windows System Media
+      Transport Controls (SMTC) so the app can find the matching lyrics for the track you are playing.</li>
+    <li><b>Album artwork thumbnail</b> of the current track may be read to pick an accent color.
+      It is processed locally and not stored or uploaded.</li>
+  </ul>
+
+  <h2>Requests sent to third-party services</h2>
+  <p class="dim">To provide its features, the app sends requests to the following services. Only the
+  information needed to return a result is sent (typically the song title, artist, and track length):</p>
+  <ul>
+    <li><b>Lyric providers</b> — QQ Music, Kugou, and LRCLIB, to download the lyrics of the current song.</li>
+    <li><b>Translation</b> — Google's translation endpoint, to translate lyric lines into Vietnamese when that option is on.</li>
+    <li><b>YouTube</b> — to read a video's captions and basic metadata when YouTube is the selected source.</li>
+    <li><b>Spotify (optional)</b> — only if you choose to log in. Login uses Spotify's standard OAuth flow.
+      Requests are sent only to Spotify and are used to read what you are currently playing.</li>
+  </ul>
+  <p class="dim">These services have their own privacy policies, which govern how they handle the requests they receive.</p>
+
+  <h2>Data stored on your device</h2>
+  <div class="card">
+    <p style="margin:0">The app stores the following locally on your computer, under
+    <code>%APPDATA%\LyricProto</code>, and nowhere else:</p>
+    <ul style="margin:10px 0 0">
+      <li>Your settings (theme, fonts, chosen source, lyric offset).</li>
+      <li>A cache of downloaded lyrics, so a song loads faster next time.</li>
+      <li>If you log in to Spotify, a Spotify refresh token, used only to connect to Spotify on your behalf.</li>
+    </ul>
+  </div>
+  <p>None of this is transmitted to the developer. You can remove it at any time by deleting the
+  <code>%APPDATA%\LyricProto</code> folder.</p>
+
+  <h2>What the developer does NOT do</h2>
+  <ul>
+    <li>No account or sign-up with the developer.</li>
+    <li>No analytics, tracking, advertising, or telemetry.</li>
+    <li>No collection, sale, or sharing of personal data.</li>
+    <li>No server operated by the developer that receives your data.</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>The app is not directed at children and does not knowingly collect any personal information from anyone.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the updated version will be posted on this page with a new effective date.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy can be raised at
+    <a href="https://github.com/dinhvanhieu3011/lyricproto/issues">github.com/dinhvanhieu3011/lyricproto/issues</a>.</p>
+
+  <hr>
+
+  <p class="lang">Tiếng Việt</p>
+  <h2>Chính sách quyền riêng tư</h2>
+  <p>LyricProto là ứng dụng Windows hiển thị lời bài hát karaoke trên màn hình, đồng bộ theo nhạc
+  bạn đang phát. Tóm tắt: <b>app chạy ngay trên máy bạn, nhà phát triển không có máy chủ nào, và
+  không thu thập, lưu trữ hay chia sẻ dữ liệu cá nhân của bạn.</b></p>
+  <ul>
+    <li><b>Thông tin bài đang phát</b> (tên bài, ca sĩ) được đọc qua Windows SMTC để tìm đúng lời bài hát.</li>
+    <li><b>Ảnh bìa</b> của bài hát có thể được đọc để lấy màu nhấn, xử lý ngay trên máy, không gửi đi đâu.</li>
+    <li><b>Gửi tới dịch vụ bên thứ ba</b> để lấy kết quả: nguồn lời (QQ Music, Kugou, LRCLIB), dịch
+      tiếng Việt (Google), phụ đề YouTube, và Spotify nếu bạn đăng nhập. Chỉ gửi thông tin cần thiết
+      như tên bài, ca sĩ, thời lượng.</li>
+    <li><b>Lưu trên máy bạn</b> tại <code>%APPDATA%\LyricProto</code>: cài đặt, bộ nhớ đệm lời, và token
+      Spotify (nếu đăng nhập). Không có gì được gửi về nhà phát triển. Xóa thư mục đó là xóa sạch.</li>
+    <li>Không tài khoản, không theo dõi, không quảng cáo, không bán dữ liệu.</li>
+  </ul>
+  <p>Mọi thắc mắc gửi tại
+    <a href="https://github.com/dinhvanhieu3011/lyricproto/issues">github.com/dinhvanhieu3011/lyricproto/issues</a>.</p>
+
+  <footer>
+    <a href="./">← Về trang chủ LyricProto</a>
+  </footer>
+</div>
+</body>
+</html>
